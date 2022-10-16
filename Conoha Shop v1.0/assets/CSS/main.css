@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif; 
+}
+
+
+/* container */
+
+.container {
+    margin: auto;
+    max-width: 1600px;
+}
+
+
+/* HEADER */
+
+
+/* opacity-header */
+
+.header {
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+.nav {
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.block_bg {
+    background-color: rgba(7, 8, 18, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+    
+
+
+/* header logo */
+
+.header_logo {
+    width: 40%;
+    font-family: 'Courgette', cursive;
+    font-size: 48px;
+    color: white;
+    z-index: 1;
+    padding-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.log {
+    font-family: 'Courgette', cursive;
+}
+
+
+/* Navigation buttons */
+
+.button_catalog,
+.button_deliver,
+.button_materials {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+    right: 0;
+    padding-top: 20px;
+    text-decoration: none;
+    -moz-transition: all 1000ms;
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+}
+
+
+/* BUTTON CATALOG */
+
+/* .button_catalog a {
+    padding-top: 20px;
+} */
+
+
+/* BUTTON MATERIALS */
+
+/* .button_materials {} */
+
+
+/* BUTTON DELIVER */
+
+/* .button_deliver {} */
+
+
+/* PNG BUTTONS */
+
+.search_button,
+.profile_button {
+    width: 50px;
+    height: 60px;
+    z-index: 1;
+    right: 0;
+    padding-top: 10px;
+}
+
+
+/* BUTTON SEARCH */
+
+/* .search_button {} */
+
+
+/* BUTTON PROFILE */
+
+/* .profile_button {} */
+
+
+/* Интро */
+
+
+/* button more */
+
+.button_more {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 1000ms;
+    border: 3px solid white;
+    margin-top: 3vw;
+    padding: 8px 30px;
+}
+
+.text_btn {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* WELOCOME TO CONOHA */
+
+.welcome_conoha {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Полоска */
+
+.decorative {
+    height: 7px;
+    width: 200px;
+    background-color: white;
+    z-index: 1;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.main_sec {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* фон интро */
+
+.intro {
+    background: url("../images/background_logo.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_div {
+    width: 60%;
+    padding-top: 20%;
+    text-align: center;
+    margin: auto 0;
+}
+
+
+/* STYLES WHEN CURSOR ON OBJECTS */
+
+
+/* simple buttons */
+
+.button_catalog:hover,
+.button_deliver:hover,
+.button_materials:hover {
+    color: yellow;
+    cursor: pointer;
+    -moz-transition: all 1000ms;
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+}
+
+
+/* png buttons */
+
+.search_button:hover,
+.profile_button:hover {
+    cursor: pointer;
+    -webkit-filter: sepia(1000) hue-rotate(320deg) saturate(100);
+    filter: sepia(1000) hue-rotate(320deg) saturate(100);
+}
+
+
+/* button more */
+
+.button_more:hover {
+    background-color: silver;
+    transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -webkit-transition: all 1000ms;
+}
+
+
+/* MAIN */
+
+
+/* SLIDER INFORMATION */
+
+.info_site {
+    width: 100%;
+    min-height: 600px;
+    background-color: #242424;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* окно где будет видно */
+
+.slider {
+    background-color: white;
+    width: 1600px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* колбаса */
+.slider-line {
+    background-color: #242424;
+    width: 4800px;
+    height: 600px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+    transition: all ease 1.2s;
+}
+
+/* arrows in slider */
+
+/* правая кнопка */
+.arrow-right {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.5em solid;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transition: 0.5s;
+    right: 0;
+    margin-top: 250px;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+  
+  /* стрелка правой кнопки */
+  .arrow-right:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.8em;
+    margin-right: 0.4em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid;
+    border-right: 0.5em solid;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-315deg);
+}
+
+
+  /* левая кнопка */
+  .arrow-left {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.5em solid;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: 250px;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+  
+  /* стрелка левой кнопки */
+  .arrow-left:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.8em;
+    margin-left: 0.3em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid;
+    border-right: 0.5em solid;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+  .arrow-left:hover,.arrow-right:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    color: black;
+}
+    /* Slide 1(block) */
+
+.info1 {
+    height: 600px;
+    width: 1600px;
+    background-color: #242424;
+    
+}
+
+        /* title in 1 block */
+
+.bl_inf {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.title_i1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    /* text in 1 block */
+
+.info1 p {
+    font-size: 35px;
+    margin-top: 100px;
+    line-height: 40px;
+    margin-left: 50px;
+}
+
+/* img block 2*/
+
+.naruto2 {
+    height: 525px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* EXAMPLES OF OUR PRODUCTS */
+
+
+/* EXAMPLE TEXT */
+
+.example_text {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+
+/* CONTAINER EXAMPLE'S */
+
+.examples {
+    text-align: center;
+    height: 450px;
+    width: 100%;
+    background-color: #737373;
+}
+
+.container_examples {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* blocks photo-slider's */
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+    width: 40%;
+    height: 70%;
+    background-color: black;
+    margin: 1% 3% 0;
+}
+
+
+/* 1 block photo-slider's */
+
+.item-1 {
+    background-color: yellow;
+    background: url('../images/cosplay1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* 2 block photo-slider's */
+
+.item-2 {
+    background-color: red;
+    background: url('../images/cosplay2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* 3 block photo-slider's */
+
+.item-3 {
+    background-color: red;
+    background: url('../images/cosplay3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* 4 block photo-slider's */
+
+.item-4 {
+    background-color: red;
+    background: url('../images/cosplay4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* 5 block photo-slider's */
+
+.item-5 {
+    background-color: red;
+    background: url('../images/cosplay5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* FACTS */
+
+
+/* CONTAINER WITH ALL FACTS */
+
+.facts_us {
+    height: 20vh;
+    width: 100%;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*  ALL BLOCKS FACTS */
+
+.f1,
+.f2,
+.f3,
+.f4,
+.f5,
+.f6,
+.f7 {
+    font-family: 'Montserrat', sans-serif;
+    height: 20vh;
+    border-left: 1px solid grey;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* last and first blocks */
+
+.f1,
+.f7 {
+    border: 0;
+}
+
+
+/* STYLES FOR TEXTS AND BLOCKS WITH FACTS */
+
+
+/* block 1  */
+
+.fact_1 {
+    font-size: 72px;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+
+/* block 2  */
+
+.fact_2 {
+    font-size: 72px;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+
+/* block 3  */
+
+.fact_3 {
+    font-size: 72px;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+
+/* block 4  */
+
+.fact_4 {
+    font-size: 72px;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+
+/* block 5  */
+
+.fact_5 {
+    font-size: 72px;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+.f6 {
+    border-right: 1px solid grey;
+}
+
+
+/* CONTAINER INFORMATION */
+
+.container_footer {
+    height: 22vh;
+    width: 100%;
+    background-color: #276476;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_call,
+.info_lock,
+.info_mail,
+.info_shop {
+    font-family: 'Montserrat', sans-serif;
+    height: 22vh;
+    border-left: 1px solid grey;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* BLOCK 1 - INFORMATION */
+
+.title_conoha,
+.title_conoha1 {
+    padding-top: 4%;
+}
+
+
+/* BLOCK 2 - MAIL */
+
+.mail_img {
+    margin-top: 4%;
+    height: 100px;
+    width: auto;
+}
+
+/* .title_mail,
+.title_mail1 {} */
+
+
+/* BLOCK 3 - CALL */
+
+.phone_img {
+    margin-top: 4%;
+    height: 100px;
+    width: auto;
+}
+
+
+/* BLOCK 4 -  FIND US */
+
+.lock_img {
+    margin-top: 4%;
+    height: 100px;
+    width: auto;
+}
+
+/* scrollbar */
+
+/* W3C standard
+   сейчас только для Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(7, 8, 18, 0.5) grey;
+}
+  
+  /* для Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+  *::-webkit-scrollbar-track {
+    background: rgba(7, 8, 18, 1);
+}
+  *::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+  
